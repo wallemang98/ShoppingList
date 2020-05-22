@@ -3,14 +3,18 @@ import React from 'react';
 //React native components
 import { View, Text, StyleSheet } from 'react-native';
 
-const Header = () => {
+const Header = (props) => {
     return (
         //Most fundamental component for building UI, styled using Flexbox
         <View style={styles.header}>
-            <Text style={styles.text}>Shopping List</Text>
+            <Text style={styles.text}>{props.title} </Text>
         </View>
     );
 };
+
+Header.defaultProps = {
+    title: 'Shopping List',
+}
 
 const styles = StyleSheet.create({
     header: {
