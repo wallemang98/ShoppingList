@@ -13,7 +13,7 @@ const App = () => {
         { id: uuidv4(), text: 'milk' },
         { id: uuidv4(), text: 'eggs' },
         { id: uuidv4(), text: 'bread' },
-        { id: uuidv4(), text: 'juice' },
+        { id: uuidv4(), text: 'juice' }
     ]);
 
     return (
