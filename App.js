@@ -16,6 +16,12 @@ const App = () => {
         { id: uuidv4(), text: 'juice' }
     ]);
 
+    const deleteItem = (id) => {
+        setItems(prevItems => {
+            return prevItems.filter(item => item.id != id);
+        });
+    }
+
     return (
         //Most fundamental component for building UI, styled using Flexbox
         <View style={ styles.container }>
@@ -23,7 +29,7 @@ const App = () => {
 
             <FlatList
                 data={items}
-                renderItem={({ item }) => <ListItem item={item} />}
+                renderItem={({ item }) => <ListItem item={item} deleteItem={deleteItem}/>}
             />
         </View> 
     );
