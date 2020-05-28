@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\android\\app",
-    "\\android\\app\\src",
     "\\components",
     "\\__tests__"
   ],
-  "SelectedNode": "\\components\\listItem.js",
+  "SelectedNode": "\\App.js",
   "PreviewInSolutionExplorer": false
 }
